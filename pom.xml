@@ -43,9 +43,11 @@
 				</configuration>
 			</plugin>
 
+			<!-- create javadoc -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.1.0</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -61,7 +63,7 @@
 					<encoding>UTF-8</encoding>
 					<charset>UTF-8</charset>
 					<docencoding>UTF-8</docencoding>
-					<additionalparam>-Xdoclint:none</additionalparam>
+					<doclint>none</doclint>
 					<additionalJOption>-J-Duser.language=en</additionalJOption>
 				</configuration>
 			</plugin>
